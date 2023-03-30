@@ -1,12 +1,145 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"></button>
+      <span class="visually-hidden">Открыть меню</span>
+      <div class="main-nav__container">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a>Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo_video.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML Academy
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="intro__wrapper">
+      <h1 class="visually-hidden">Добро пожаловать в Седона</h1>
+      <div class="intro-img__wrapper">
+        <img src="img/text-index.svg" alt="Welcome to the gargeous" width="282" height="214">
+      </div>
+    </section>
+
+    <!-- Вспоминай как делал аналогичный блок в первом интенсиве. Структура не правильная -->
+    <section class="advantages">
+      <div class="advantages__container">
+        <h2 class="advantages__title">Седона — небольшой <br> городок в Аризоне, <br>заслуживающий большего!</h2>
+        <p class="advantages__description">Рассмотрим 5 причин, по которым <br> Седона круче, чем гранд каньон!</p>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page__container">
+        <h3 class="page__title">Настоящий городок</h3>
+        <p class="number__text">— №1 —</p>
+        <p class="page__text">Седона не аттракцион для туристов,<br> там течет своя жизнь</p>
+      </div>
+      <div class="page-photo__container">
+
+        <!-- Ни каких пробелов и лишних символов  -->
+        <img src="img/photo-city.jpg" alt="Фото здания в городе" width="320" height="260">
+      </div>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--housing">
+          <h3 class="advantages__title">Жилье</h3>
+          <p class="advantages__description">Рекомендуем пожить в <br> настоящем мотеле, все как в <br> кино!</p>
+        </li>
+        <li class="advantages__item advantages__item--food">
+          <h3 class="advantages__title">Еда</h3>
+          <p class="advantages__description">Всегда заказывайте фирменный <br> бургер, вы не разочаруетесь!</p>
+        </li>
+        <li class="advantages__item advantages__item--souvenirs">
+          <h3 class="advantages__title">Сувениры</h3>
+          <p class="advantages__description">Не только китайского, но и <br> местного производства!</p>
+        </li>
+      </ul>
+      <div class="page__container">
+        <h3 class="page__title">Там есть мост дьявола</h3>
+        <p class="number__text">— №2 —</p>
+        <p class="page__text">Да, по нему можно пройти! Если вы <br> осмелитесь, конечно</p>
+      </div>
+      <div class="page-photo__container">
+        <img src="img/photo-bridge.jpg" alt="Фото моста Дьявола" width="320" height="260">
+      </div>
+      <div class="page__container">
+        <h3 class="page__title">Небольшая площадь</h3>
+        <p class="number__text">— №3 —</p>
+        <p class="page__text">Все интересные места находятся <br> очень близко</p>
+      </div>
+      <div class="page__container">
+        <h3 class="page__title">Красивая дорога</h3>
+        <p class="number__text">— №4 —</p>
+        <p class="page__text">Ехать в Седону из Лас-Вегаса <br> совсем не скучно!</p>
+      </div>
+      <div class="page__container">
+        <h3 class="page__title">Мало туристов</h3>
+        <p class="number__text">— №5 —</p>
+        <p class="page__text">Большинство едет в гранд каньон <br> и толпится там</p>
+      </div>
+    </section>
+    <section class="search">
+      <div class="search__container">
+        <h2 class="search__title">Заинтересовались?</h2>
+        <p class="search__text">Укажите предполагаемые даты <br> поездки,и мы покажем вам лучшие <br> предложения гостиниц в Седоне</p>
+        <a class="search-button__button" href="#">Найти гостиницу</a>
+      </div>
+    </section>
+    <section class="map">
+      <div class="map__image">
+        <img src="img/map-mobile.jpg" alt="Карта Аризоны" width="320" height="350">
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__container">
+      <div class="main-footer__social social">
+        <b class="social__title">#visitsedona</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <img src="img/logo-htmlacademy.svg" alt="Логотип" width="27" height="34">
+      </div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
