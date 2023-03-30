@@ -1,70 +1,69 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>HTML Academy: Седона</title>
 </head>
 
-<body class="page__body">
-  <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Седона">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"></button>
-      <span class="visually-hidden">Открыть меню</span>
-      <div class="main-nav__container">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a>Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo_video.html">
-              Фото и видео
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">
-              HTML Academy
-            </a>
-          </li>
-        </ul>
-      </div>
+<body class="body">
+  <header class="header">
+    <!-- navigation--open открывает меню -->
+    <nav class="header__navigation navigation">
+      <a class="navigation__logo" href="index.html">
+        <img src="img/svg/logo.svg" width="185" height="96" alt="Логотип Седоны.">
+      </a>
+      <button class="navigation__btn" type="button">
+        <span class="visually-hidden">Открыть / Закрыть меню</span>
+      </button>
+      <ul class="navigation__list list-reset">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current" href="form.html" aria-current="page">Форма отзыва</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="https://htmlacademy.ru">Html Academy</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main class="main">
+    <section class="intro">
+      <div class="intro__description">
+        <p class="intro__title">Седона &mdash; небольшой городок в Аризоне, <br>заслуживающий большего!</p>
+        <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
+    </section>
 
   </main>
-  <footer class="main-footer">
-    <div class="main-footer__container">
-      <div class="main-footer__social social">
-        <b class="social__title">#visitsedona</b>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-footer__copyright copyright">
-        <p class="copyright__text">Разработано</p>
-        <img src="img/logo-htmlacademy.svg" alt="Логотип" width="27" height="34">
-      </div>
-    </div>
+  <footer class="footer">
+    <a class="footer__appeal" href="#">#Visitsedona</a>
+    <ul class="social list-reset">
+      <li class="social__item">
+        <a class="social__link" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Мы в контакте.</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Мы в телеграм.</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Мы на YouTybe.</span>
+        </a>
+      </li>
+    </ul>
+    <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="footer__copyright-text">Разработано</span>
+    </a>
   </footer>
-
 </body>
 
 </html>
