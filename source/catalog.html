@@ -8,8 +8,7 @@
 
 <body class="body">
   <header class="header">
-    <!-- navigation--open открывает меню -->
-    <nav class="header__navigation navigation">
+    <nav class="header__navigation navigation--open">
       <a class="navigation__logo" href="index.html">
         <img src="img/svg/logo.svg" width="185" height="96" alt="Логотип Седоны.">
       </a>
@@ -35,11 +34,45 @@
   <main class="main">
     <section class="intro">
       <div class="intro__description">
-        <p class="intro__title">Седона &mdash; небольшой городок в Аризоне, <br>заслуживающий большего!</p>
-        <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <h2 class="intro__title">Фото и видео</h2>
+        <p class="intro__text">Не можете решиться на путешествие из-за курса?<br> Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
     </section>
-
+    <ul class="product__list">
+      <li class="product__card">
+        <a class="product__card--image__link" href="product.html">
+          <img class="product__card--image" src="img/photo-1.jpg" width="280" height="280" alt="Дорога">
+        </a>
+        <h3 class="product-card-title">Народные просторы</h3>
+        <span class="product-card-price">Автор фото: Борис</span>
+      </li>
+      <li class="product__card">
+        <a class="product__card--image__link" href="product.html">
+          <img class="product__card--image" src="img/photo-2.jpg" width="280" height="280" alt="Дорога">
+        </a>
+        <h3 class="product-card-title">Местная растительность</h3>
+        <span class="product-card-price">Автор фото: Сергей</span>
+      </li>
+      <li class="product__card">
+        <a class="product__card--image__link" href="product.html">
+          <img class="product__card--image" src="img/photo-3.jpg" width="280" height="280" alt="Дорога">
+        </a>
+        <h3 class="product-card-title">Дорога на север</h3>
+        <span class="product-card-price">Автор фото: Петр</span>
+      </li>
+      <li class="product__card">
+        <a class="product__card--image__link" href="product.html">
+          <img class="product__card--image" src="img/photo-bridge.jpg" width="280" height="280" alt="Дорога">
+        </a>
+        <h3 class="product-card-title">Мост Дьявола</h3>
+        <span class="product-card-price">Автор фото: Антон</span>
+      </li>
+    </ul>
+    <section class="video-card">
+      <h2 class="video__card__title">Все еще сомневаетесь?</h2>
+      <p class="viedo__card__text">Смотрите видеопрезентацию и скорее за билетами, пока они <br> не подорожали в очередной раз!</p>
+      <p><a href="#"><img src="img/video.jpg" width="280" height="177" alt="Видео"></a></p>
+    </section>
   </main>
   <footer class="footer">
     <a class="footer__appeal" href="#">#Visitsedona</a>
