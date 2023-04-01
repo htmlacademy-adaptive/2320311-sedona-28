@@ -33,45 +33,76 @@
   </header>
   <main class="main">
     <section class="intro">
+      <div class="intro__bg">
+        <img src="img/svg/sedona.svg" alt="Седона" width="229" height="39">
+      </div>
       <div class="intro__description">
-        <h2 class="intro__title">Фото и видео</h2>
+        <h1 class="intro__title">Фото и видео</h1>
         <p class="intro__text">Не можете решиться на путешествие из-за курса?<br> Фотографии помогут вам забыть о политике и экономике.</p>
       </div>
     </section>
-    <ul class="product__list">
-      <li class="product__card">
-        <a class="product__card--image__link" href="product.html">
-          <img class="product__card--image" src="img/photo-1.jpg" width="280" height="280" alt="Дорога">
-        </a>
-        <h3 class="product-card-title">Народные просторы</h3>
-        <span class="product-card-price">Автор фото: Борис</span>
-      </li>
-      <li class="product__card">
-        <a class="product__card--image__link" href="product.html">
-          <img class="product__card--image" src="img/photo-2.jpg" width="280" height="280" alt="Дорога">
-        </a>
-        <h3 class="product-card-title">Местная растительность</h3>
-        <span class="product-card-price">Автор фото: Сергей</span>
-      </li>
-      <li class="product__card">
-        <a class="product__card--image__link" href="product.html">
-          <img class="product__card--image" src="img/photo-3.jpg" width="280" height="280" alt="Дорога">
-        </a>
-        <h3 class="product-card-title">Дорога на север</h3>
-        <span class="product-card-price">Автор фото: Петр</span>
-      </li>
-      <li class="product__card">
-        <a class="product__card--image__link" href="product.html">
-          <img class="product__card--image" src="img/photo-bridge.jpg" width="280" height="280" alt="Дорога">
-        </a>
-        <h3 class="product-card-title">Мост Дьявола</h3>
-        <span class="product-card-price">Автор фото: Антон</span>
-      </li>
-    </ul>
-    <section class="video-card">
-      <h2 class="video__card__title">Все еще сомневаетесь?</h2>
-      <p class="viedo__card__text">Смотрите видеопрезентацию и скорее за билетами, пока они <br> не подорожали в очередной раз!</p>
-      <p><a href="#"><img src="img/video.jpg" width="280" height="177" alt="Видео"></a></p>
+    <section class="product">
+      <ul class="product__list">
+        <li class="product__card">
+          <a class="product__image" href="#">
+            <img src="img/photo-1.jpg" width="280" height="280" alt="Дорога">
+          </a>
+          <div class="product__container">
+            <div class="product__description">
+              <h3 class="product-card-title">Народные просторы</h3>
+              <span class="product-card-price">Автор фото: Борис</span>
+            </div>
+            <button class="product__like" type="button" aria-label="Лайк">
+              <span>1350</span>
+            </button>
+          </div>
+          <a class="product__image" href="#">
+            <img src="img/photo-2.jpg" width="280" height="280" alt="Дорога">
+          </a>
+          <div class="product__container">
+            <div class="product__description">
+              <h3 class="product-card-title">Местная растительность</h3>
+              <span class="product-card-price">Автор фото: Сергей</span>
+            </div>
+            <button class="product__like" type="button" aria-label="Лайк">
+              <span>143</span>
+            </button>
+          </div>
+          <a class="product__image" href="#">
+            <img src="img/photo-3.jpg" width="280" height="280" alt="Дорога">
+          </a>
+          <div class="product__container">
+            <div class="product__description">
+              <h3 class="product-card-title">Дорога на север</h3>
+              <span class="product-card-price">Автор фото: Петр</span>
+            </div>
+            <button class="product__like" type="button" aria-label="Лайк">
+              <span>96</span>
+            </button>
+          </div>
+          <a class="product__image" href="#">
+            <img src="img/photo-bridge.jpg" width="280" height="280" alt="Дорога">
+          </a>
+          <div class="product__container">
+            <div class="product__description">
+              <h3 class="product-card-title">Мост Дьявола</h3>
+              <span class="product-card-price">Автор фото: Антон</span>
+            </div>
+            <button class="product__like" type="button" aria-label="Лайк">
+              <span>254</span>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="video">
+      <h2 class="video__title">Все еще сомневаетесь?</h2>
+      <p class="viedo__text">Смотрите видеопрезентацию и скорее за билетами, пока они <br> не подорожали в очередной раз!</p>
+      <p>
+        <a href="#"><img src="img/video.jpg" width="280" height="177" alt="Видео"></a>
+      </p>
+      <button><img src="img/svg/button.svg" alt="Кнопка" width="48" height="54">
+      </button>
     </section>
   </main>
   <footer class="footer">
