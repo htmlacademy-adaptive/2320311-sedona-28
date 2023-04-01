@@ -33,7 +33,7 @@
     </nav>
   </header>
   <main class="main">
-    <section class="intro">
+    <section class="intro intro--page">
       <div class="intro__bg">
         <img src="img/svg/sedona.svg" alt="Седона" width="229" height="39">
       </div>
@@ -43,67 +43,75 @@
       </div>
     </section>
     <section class="product">
-      <ul class="product__list">
-        <li class="product__card">
-          <a class="product__image" href="#">
-            <img src="img/photo-1.jpg" width="280" height="280" alt="Дорога">
+      <h2 class="visually-hidden">Галлерея фотографий</h2>
+      <ol class="product__list list-reset">
+        <li class="product__item">
+          <a class="product__img" href="#">
+            <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы.">
           </a>
           <div class="product__container">
             <div class="product__description">
-              <h3 class="product-card-title">Народные просторы</h3>
-              <span class="product-card-price">Автор фото: Борис</span>
+              <h2 class="product__title">Неродные просторы</h2>
+              <span class="product__photographer">Автор фото: Борис</span>
             </div>
-            <button class="product__like" type="button" aria-label="Лайк">
+            <button class="product__like" type="button" aria-label="Лайки">
               <span>1350</span>
             </button>
           </div>
-          <a class="product__image" href="#">
-            <img src="img/photo-2.jpg" width="280" height="280" alt="Дорога">
+        </li>
+        <li class="product__item">
+          <a class="product__img" href="#">
+            <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность.">
           </a>
           <div class="product__container">
             <div class="product__description">
-              <h3 class="product-card-title">Местная растительность</h3>
-              <span class="product-card-price">Автор фото: Сергей</span>
+              <h2 class="product__title">Местная растительность</h2>
+              <span class="product__photographer">Автор фото: Сергей</span>
             </div>
-            <button class="product__like" type="button" aria-label="Лайк">
+            <button class="product__like" type="button" aria-label="Лайки">
               <span>143</span>
             </button>
           </div>
-          <a class="product__image" href="#">
-            <img src="img/photo-3.jpg" width="280" height="280" alt="Дорога">
+        </li>
+        <li class="product__item">
+          <a class="product__img" href="#">
+            <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север.">
           </a>
           <div class="product__container">
             <div class="product__description">
-              <h3 class="product-card-title">Дорога на север</h3>
-              <span class="product-card-price">Автор фото: Петр</span>
+              <h2 class="product__title">Дорога на север</h2>
+              <span class="product__photographer">Автор фото: Пётр</span>
             </div>
-            <button class="product__like" type="button" aria-label="Лайк">
+            <button class="product__like" type="button" aria-label="Лайки">
               <span>96</span>
             </button>
           </div>
-          <a class="product__image" href="#">
-            <img src="img/photo-bridge.jpg" width="280" height="280" alt="Дорога">
+        </li>
+        <li class="product__item">
+          <a class="product__img" href="#">
+            <img src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост Дьявола.">
           </a>
           <div class="product__container">
             <div class="product__description">
-              <h3 class="product-card-title">Мост Дьявола</h3>
-              <span class="product-card-price">Автор фото: Антон</span>
+              <h2 class="product__title">Мост Дьявола</h2>
+              <span class="product__photographer">Автор фото: Антон</span>
             </div>
-            <button class="product__like" type="button" aria-label="Лайк">
+            <button class="product__like" type="button" aria-label="Лайки">
               <span>254</span>
             </button>
           </div>
         </li>
-      </ul>
+      </ol>
     </section>
     <section class="video">
       <h2 class="video__title">Все еще сомневаетесь?</h2>
-      <p class="viedo__text">Смотрите видеопрезентацию и скорее за билетами, пока они <br> не подорожали в очередной раз!</p>
-      <p>
-        <a href="#"><img src="img/video.jpg" width="280" height="177" alt="Видео"></a>
-      </p>
-      <button><img src="img/svg/button.svg" alt="Кнопка" width="48" height="54">
-      </button>
+      <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они <br>не подорожали в очередной раз!</p>
+      <div class="video__image">
+        <img src="img/video-mobile.jpg" width="280" height="177" alt="Видеопрезентация.">
+        <button class="video__play" type="button">
+          <span class="visually-hidden">Play</span>
+        </button>
+      </div>
     </section>
   </main>
   <footer class="footer">

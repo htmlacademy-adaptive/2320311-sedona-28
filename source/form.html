@@ -50,88 +50,87 @@
         <div class="form__wrapper-fieldset">
           <fieldset class="form__fieldset form__fieldset--data">
             <h2 class="form__fieldset-title">Представьтесь:</h2>
-            <ul class="form__contacts-list list-reset">
-              <div>
-                <label class="form__contacts-label" for="name">Имя*:</label>
-                <input class="form__contacts-input" id="name" type="text" placeholder="Укажите имя" value="Петр" required>
-              </div>
-              <div>
-                <label class="form__contacts-label" for="surname">Фамилия*:</label>
-                <input class="form__contacts-input" id="surname" type="text" placeholder="Укажите фамилилю" value="Пустота" required>
-              </div>
-              <div>
-                <label class="form__contacts-label" for="patronymic">Отчество:</label>
-                <input class="form__contacts-input" id="patronymic" type="text" placeholder="Укажите отчество" value="Викторович" required>
-              </div>
-            </ul>
-          </fieldset>
-          <div class="form__wrapper-fieldset">
-            <fieldset class="form__fieldset form__fieldset--contacts">
-              <h2 class="contacts__title">Контактная информация:</h2>
-              <ul class="form__contacts-list list-reset">
-                <p class="field__group appointment__form__phone">
-                  <label class="form__contacts-label" for="appointment__phone">
-                    Контактный телефон*:
-                  </label>
-                  <input class="form__contacts-input" type="text" id="auth-phone" name="phone" placeholder="Введите телефон ">
-                </p>
-                <label class="form__contacts-label" for="newsletter-email">Электронная почта*:</label>
-                <input class="form__contacts-input" type="email" placeholder="Введите e-mail" name="email" id="auth-email" required>
-              </ul>
-            </fieldset>
-          </div>
-          <fieldset class="form__fieldset form__fieldset--feedback">
-            <h2 class="form__fieldset-title form__fieldset-title--lines">
-              <span>Ваше общее впечатление:</span>
-            </h2>
-            <ul class="form__options list-reset">
-              <li class="form__options-item">
-                <label class="form__options-label" for="filter-positive">Скорее положительное</label>
-                <input class="form__options-input form__options-input--radio" type="radio" name="positive decision" value="impression">
+            <ul class="form__contact-list list-reset">
+              <li class="form__contact-item">
+                <label class="form__contact-label" for="name">Имя*:</label>
+                <input class="form__contact-input" id="name" type="text" name="name" value="Пётр" placeholder="Имя" required>
               </li>
-              <li class="form__options-item">
-                <label class="form__options-label" for="filter-negative">Скорее отрицательное</label>
-                <input class="form__options-input form__options-input--radio" type="radio" name="negative decision" value="impression">
+              <li class="form__contact-item">
+                <label class="form__contact-label" for="surname">Фамилия*:</label>
+                <input class="form__contact-input" id="surname" type="text" name="surname" value="Пустота" placeholder="Фамилия" required>
               </li>
-              <li class="form__options-item">
-                <label class="form__options-label" for="filter-difficult">Затрудняюсь ответить</label>
-                <input class="form__options-input form__options-input--radio" type="radio" name="no answer" value="impression">
+              <li class="form__contact-item">
+                <label class="form__contact-label" for="patronymic">Отчество:</label>
+                <input class="form__contact-input" id="patronymic" type="text" name="patronymic" value="Викторович" placeholder="Отчество">
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--attractions">
-            <h2 class="form__fieldset-title form__fieldset-title--lines">
-              <span>Посещенные достопримечательности:</span>
-            </h2>
-            <ul class="form__options list-reset">
-              <li class="form__options-item">
-                <label class="form__options-label" for="devils bridge">Мост Дьявола</label>
-                <input class="form__options-input" type="checkbox" name="devils bridge" value="Мост Дьявола" id="devils bridge" checked>
+          <fieldset class="form__fieldset form__fieldset--contact">
+            <h2 class="form__fieldset-title">Контактная информация:</h2>
+            <ul class="form__contact-list list-reset">
+              <li class="form__contact-item">
+                <label class="form__contact-label" for="phone">Контактный телефон*:</label>
+                <input class="form__contact-input form__contact-input--phone" id="phone" type="tel" name="phone" placeholder="Введите телефон" required>
               </li>
-              <li class="form__options-item">
-                <label class="form__options-label" for="mountain bell">Гора Колокол</label>
-                <input class="form__options-input" type="checkbox" name="mountain bell" value="Гора Колокол" id="mountain bell" checked>
-              </li>
-              <li class="form__options-item">
-                <label class="form__options-label" for="slide-park">Слайд-парк </label>
-                <input class="form__options-input" type="checkbox" name="slide-park" value="Слайд-парк" id="slide-park" checked>
-              </li>
-              <li class="form__options-item">
-                <label class="form__options-label" for="red-rocks">Красные скалы</label>
-                <input class="form__options-input" type="checkbox" name="red rocks" value="Красные скалы" id="red-rocks">
+              <li class="form__contact-item">
+                <label class="form__contact-label" for="e-mail">Электронная почта*:</label>
+                <input class="form__contact-input form__contact-input--mail" id="e-mail" type="email" name="e-mail" placeholder="Введите e-mail" required>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form__fieldset form__fieldset--recall">
-            <h2 class="form__fieldset-title form__fieldset-title--lines">
-              <span>Опишите свои эмоции:</span>
-            </h2>
-            <textarea class="form__feedback" id="recall-filed" name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
-          </fieldset>
-          <fieldset class="form__fieldset form__fieldset--sumbit">
-            <button class="form__sumbit button" type="sumbit">Отправить отзыв</button>
-            <span class="form__note">* - обязательные поля</span>
-          </fieldset>
+        </div>
+        <fieldset class="form__fieldset form__fieldset--feedback">
+          <h2 class="form__fieldset-title form__fieldset-title--lines">
+            <span>Ваше общее впечатление:</span>
+          </h2>
+          <ul class="form__options list-reset">
+            <li class="form__options-item">
+              <input class="form__options-input form__options-input--radio" type="radio" name="feedback" value="Положительное" id="filter-positive" checked>
+              <label class="form__options-label" for="filter-positive">Скорее положительное</label>
+            </li>
+            <li class="form__options-item">
+              <input class="form__options-input form__options-input--radio" type="radio" name="feedback" value="Отрицательное" id="filter-negative">
+              <label class="form__options-label" for="filter-negative">Скорее отрицательное</label>
+            </li>
+            <li class="form__options-item">
+              <input class="form__options-input form__options-input--radio " type="radio" name="feedback" value="Затрудняюсь" id="filter-difficult">
+              <label class="form__options-label" for="filter-difficult">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--attractions">
+          <h2 class="form__fieldset-title form__fieldset-title--lines">
+            <span>Посещенные достопримечательности:</span>
+          </h2>
+          <ul class="form__options list-reset">
+            <li class="form__options-item">
+              <input class="form__options-input form__options-input--check" type="checkbox" name="devil-bridge" value="Мост-дьявола" id="devil-bridge" checked>
+              <label class="form__options-label" for="devil-bridge">Мост Дьявола</label>
+            </li>
+            <li class="form__options-item">
+              <input class="form__options-input form__options-input--check" type="checkbox" name="bell-mountain" value="Гора-колокол" id="bell-mountain" checked>
+              <label class="form__options-label" for="bell-mountain">Гора-Колокол</label>
+            </li>
+            <li class="form__options-item">
+              <input class="form__options-input form__options-input--check" type="checkbox" name="slide-park" value="Слайд-парк" id="slide-park" checked>
+              <label class="form__options-label" for="slide-park">Слайд-парк</label>
+            </li>
+            <li class="form__options-item">
+              <input class="form__options-input form__options-input--check" type="checkbox" name="red-rocks" value="Красные-скалы" id="red-rocks">
+              <label class="form__options-label" for="red-rocks">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--recall">
+          <h2 class="form__fieldset-title form__fieldset-title--lines">
+            <span>Опишите свои эмоции:</span>
+          </h2>
+          <textarea class="form__feedback" id="recall-filed" name="emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--sumbit">
+          <button class="form__sumbit button" type="sumbit">Отправить отзыв</button>
+          <span class="form__note">* - обязательные поля</span>
+        </fieldset>
       </form>
     </section>
   </main>
