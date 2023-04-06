@@ -1,0 +1,34 @@
+.video__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: "PT Sans";
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.video__text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans";
+  text-align: center;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.video__play {
+  position: absolute;
+
+  width: 48px;
+  height: 54px;
+
+  background-image: url("../img/svg/button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  appearance: none;
+}

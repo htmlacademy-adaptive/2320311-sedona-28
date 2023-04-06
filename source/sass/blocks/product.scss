@@ -1,0 +1,17 @@
+.product__title {
+  margin: 0;
+
+  font-size: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.product__photographer {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.product__like {
+  background-image: url("../img/svg/like-icon.svg");
+  background-repeat: no-repeat;
+}
