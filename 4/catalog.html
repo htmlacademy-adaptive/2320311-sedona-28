@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/2320311-sedona-28/4/">
+</head>
+
+<body class="body">
+  <header class="header">
+    <!-- navigation--open открывает меню -->
+    <nav class="header__navigation navigation">
+      <a class="navigation__logo" href="index.html">
+        <img src="img/svg/logo.svg" width="185" height="96" alt="Логотип Седоны.">
+      </a>
+      <button class="navigation__btn" type="button">
+        <span class="visually-hidden">Открыть / Закрыть меню</span>
+      </button>
+      <ul class="navigation__list list-reset">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current" href="catalog.html" aria-current="page">Фото и видео</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="https://htmlacademy.ru">Html Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section class="intro intro--page">
+      <div class="intro__bg">
+        <img src="img/svg/sedona.svg" alt="Седона" width="229" height="39">
+      </div>
+      <div class="intro__description">
+        <h1 class="intro__title">Фото и видео</h1>
+        <p class="intro__text">Не можете решиться на путешествие из-за курса?<br> Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
+    </section>
+    <section class="product">
+      <h2 class="visually-hidden">Галлерея фотографий</h2>
+      <ol class="product__list list-reset">
+        <li class="product__item">
+          <a class="product__img" href="#">
+            <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы.">
+          </a>
+          <div class="product__container">
+            <div class="product__description">
+              <h2 class="product__title">Неродные просторы</h2>
+              <span class="product__photographer">Автор фото: Борис</span>
+            </div>
+            <button class="product__like" type="button" aria-label="Лайки">
+              <span>1350</span>
+            </button>
+          </div>
+        </li>
+        <li class="product__item">
+          <a class="product__img" href="#">
+            <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность.">
+          </a>
+          <div class="product__container">
+            <div class="product__description">
+              <h2 class="product__title">Местная растительность</h2>
+              <span class="product__photographer">Автор фото: Сергей</span>
+            </div>
+            <button class="product__like" type="button" aria-label="Лайки">
+              <span>143</span>
+            </button>
+          </div>
+        </li>
+        <li class="product__item">
+          <a class="product__img" href="#">
+            <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север.">
+          </a>
+          <div class="product__container">
+            <div class="product__description">
+              <h2 class="product__title">Дорога на север</h2>
+              <span class="product__photographer">Автор фото: Пётр</span>
+            </div>
+            <button class="product__like" type="button" aria-label="Лайки">
+              <span>96</span>
+            </button>
+          </div>
+        </li>
+        <li class="product__item">
+          <a class="product__img" href="#">
+            <img src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост Дьявола.">
+          </a>
+          <div class="product__container">
+            <div class="product__description">
+              <h2 class="product__title">Мост Дьявола</h2>
+              <span class="product__photographer">Автор фото: Антон</span>
+            </div>
+            <button class="product__like" type="button" aria-label="Лайки">
+              <span>254</span>
+            </button>
+          </div>
+        </li>
+      </ol>
+    </section>
+    <section class="video">
+      <h2 class="video__title">Все еще сомневаетесь?</h2>
+      <p class="video__text">Смотрите видеопрезентацию и <br> скорее за билетами, пока они не <br> подорожали в очередной раз!</p>
+      <div class="video__image">
+        <img src="img/video-mobile.jpg" width="280" height="177" alt="Видеопрезентация.">
+        <button class="video__play" type="button">
+          <span class="visually-hidden">Play</span>
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <a class="footer__appeal" href="#">#Visitsedona</a>
+    <ul class="social list-reset">
+      <li class="social__item">
+        <a class="social__link" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Мы в контакте.</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Мы в телеграм.</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+          <span class="visually-hidden">Мы на YouTybe.</span>
+        </a>
+      </li>
+    </ul>
+    <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="footer__copyright-text">Разработано</span>
+    </a>
+  </footer>
+</body>
+
+</html>
