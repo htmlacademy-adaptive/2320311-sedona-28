@@ -1,18 +1,22 @@
 .advantages__wrapper {
-  width: 100%;
+  text-transform: uppercase;
 }
 
 .advantages__container {
-  width: 320px;
   padding: 54px 18px 40px;
 
   text-align: center;
+  text-transform: uppercase;
 }
 
 .advantages__wrapper .advantages__container {
   color: #ffffff;
 
   background-color: #82b3d3;
+}
+
+.advantages__item {
+  color: #000000;
 }
 
 .advantages__title {
@@ -22,7 +26,6 @@
 
   font-size: 18px;
   line-height: 26px;
-  text-transform: uppercase;
 }
 
 .advantages__img {

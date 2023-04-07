@@ -25,14 +25,14 @@ body {
   margin: 0 auto;
 
   font-style: normal;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 21px;
   font-family: $font;
   color: #333333;
 
   background-color: #ffffff;
-  background-repeat: no-repeat;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 img {

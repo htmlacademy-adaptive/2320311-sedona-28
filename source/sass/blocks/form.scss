@@ -1,10 +1,4 @@
 .form__contact-label {
-  width: 120px;
-  padding-top: 20px;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
   text-transform: uppercase;
 }
 
@@ -15,19 +9,20 @@
 
   font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 21px;
   font-family: "PT Sans", sans-serif;
   color: #000000;
 
   background-color: #f2f2f2;
-  border: 2px solid transparent;
-  border-radius: 4px;
-
-  appearance: none;
+  border: 4px;
 }
 
 .form__fieldset-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .form__contact-input--phone {
@@ -41,18 +36,17 @@
 }
 
 .form__options-label {
-  width: 100%;
-  height: 26px;
-
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  font-family: "PT Sans", sans-serif;
   color: #000000;
+}
 
-  background-color: #f2f2f2;
-  border: 2px solid transparent;
-  border-radius: 4px;
+.form__options-input {
+  width: 46px;
+  height: 46px;
+
+  transform: translateY(-50%);
 
   appearance: none;
 }
@@ -65,13 +59,13 @@
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
 
   width: 16px;
   height: 16px;
 
   background-color: #333333;
   border-radius: 50%;
+  transform: translateY(-50%);
 }
 
 .form__options-input[type="checkbox"]:checked {
@@ -80,20 +74,7 @@
   background-position: center;
 }
 
-.form__sumbit {
-  margin: 0;
-  padding: 8px;
-
-  font-size: 21px;
-  line-height: 26px;
-
-  background-color: #82b3d3;
-  border: 2px solid transparent;
-  border-radius: 4px;
-
-  appearance: none;
-}
-
-.button {
-  color: #ffffff;
+.form__submit {
+  width: 100%;
+  padding: 56px 20px 46px;
 }

@@ -3,9 +3,12 @@
 }
 
 .search__button {
-  display: block;
-  width: 284px;
+  text-align: center;
+  text-decoration: none;
+}
 
+.search__title {
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
 }
