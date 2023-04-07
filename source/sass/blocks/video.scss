@@ -1,27 +1,23 @@
-.video {
-  position: relative;
-}
-
 .video__title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #333333;
+  color: #000000;
 }
 
 .video__play {
   position: absolute;
+  top: 50%;
+  left: 50%;
 
-  display: block;
   width: 48px;
   height: 54px;
-  margin-right: auto;
-  margin-left: auto;
 
-  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+
+  background-color: transparent;
   background-image: url("../img/svg/button.svg");
   background-repeat: no-repeat;
-  background-position: center;
   border: none;
-  opacity: 0.2;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
 }
