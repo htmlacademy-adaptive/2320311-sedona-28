@@ -1,7 +1,7 @@
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "PT Sans";
+  font-family: $font;
 
   font-display: swap;
   src: url("../fonts/ptsans.woff") format(woff),
@@ -11,7 +11,7 @@
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "PT Sans";
+  font-family: $font;
 
   font-display: swap;
   src: url("../fonts/ptsansbold.woff") format(woff),
