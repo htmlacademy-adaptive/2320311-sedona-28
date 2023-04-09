@@ -9,7 +9,15 @@
 }
 
 .navigation__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+
   display: none;
+
+  background-color: #81b3d2;
 }
 
 .navigation__logo {
@@ -34,4 +42,8 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navigation--open .navigation__list {
+  display: block;
 }
