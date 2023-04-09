@@ -1,0 +1,58 @@
+.advantages__wrapper {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.advantages__container {
+  padding: 54px 18px 40px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages__wrapper .advantages__container {
+  color: #ffffff;
+
+  background-color: #82b3d3;
+}
+
+.advantages__title {
+  position: relative;
+
+  margin: 0 0 11px;
+
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.advantages__wrapper .advantages__title {
+  color: #ffffff;
+}
+
+.advantages__img {
+  width: 100%;
+  height: 260px;
+}
+
+.advantages__img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.advantages__attractions-item {
+  background-repeat: no-repeat;
+}
+
+.advantages__attractions-item--motel {
+  background-image: url("../img/svg/motel.svg");
+}
+
+.advantages__attractions-item--meal {
+  background-image: url("../img/svg/meal.svg");
+}
+
+.advantages__attractions-item--souvenirs {
+  background-image: url("../img/svg/souvenirs.svg");
+}

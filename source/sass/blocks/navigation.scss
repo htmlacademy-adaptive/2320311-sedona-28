@@ -1,0 +1,49 @@
+.navigation {
+  position: relative;
+}
+
+.navigation__btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.navigation__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+
+  display: none;
+
+  background-color: #81b3d2;
+}
+
+.navigation__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+
+  display: block;
+  width: 185px;
+  height: 96px;
+
+  transform: translateX(-50%);
+}
+
+.navigation__link {
+  display: inline-block;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navigation--open .navigation__list {
+  display: block;
+}
