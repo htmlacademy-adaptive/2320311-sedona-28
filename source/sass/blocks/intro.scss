@@ -6,6 +6,50 @@
   background-repeat: no-repeat;
 }
 
+@media (min-width: $tablet-width) {
+  .intro__bg {
+    padding: 77px 153px 71px;
+
+    color: #ffffff;
+
+    background-color: #94989b;
+    background-image: url("../img/svg/divider.svg"),
+      url("../img/back-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom, center;
+    background-size: 100% auto, cover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro__bg img {
+    width: 461px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__bg {
+    padding: 38px 370px 90px;
+
+    color: #ffffff;
+
+    background-color: #94989b;
+    background-image: url("../img/svg/divider.svg"),
+      url("../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom, center;
+    background-size: 100% auto, cover;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__bg img {
+    width: 459px;
+    margin: 0 auto;
+  }
+}
+
 .intro__description {
   padding: 32px 18px 16px;
 

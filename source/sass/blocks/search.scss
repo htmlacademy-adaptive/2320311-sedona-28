@@ -2,6 +2,7 @@
   padding: 38px 29px 32px;
 
   text-align: center;
+  text-transform: uppercase;
 }
 
 .search__title {
@@ -10,4 +11,10 @@
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .search__button {
+    text-align: center;
+  }
 }

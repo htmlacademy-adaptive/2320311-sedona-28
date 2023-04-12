@@ -1,6 +1,25 @@
+/* С иконками не получается ,не встают поверх текста  */
+/* С поиском гостиницей (кнопкой) так и не смог решить проблему ,карта поверх становится все время и не меняется размер */
+
 .advantages__wrapper {
   color: #ffffff;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    display: grid;
+
+    grid-template-columns: 256px 512px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__wrapper {
+    display: grid;
+
+    grid-template-columns: 400px 800px;
+  }
 }
 
 .advantages__container {
@@ -8,12 +27,6 @@
 
   text-align: center;
   text-transform: uppercase;
-}
-
-.advantages__wrapper .advantages__container {
-  color: #ffffff;
-
-  background-color: #82b3d3;
 }
 
 .advantages__title {
@@ -24,6 +37,12 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+}
+
+.advantages__wrapper .advantages__container {
+  color: #ffffff;
+
+  background-color: #82b3d3;
 }
 
 .advantages__wrapper .advantages__title {
@@ -41,12 +60,65 @@
   height: 100%;
 }
 
+@media (min-width: $tablet-width) {
+  .advantages__attractions {
+    display: grid;
+
+    list-style: none;
+
+    grid-template-columns: 256px 256px 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__attractions {
+    display: grid;
+
+    list-style: none;
+
+    grid-template-columns: 400px 400px 400px;
+  }
+}
+
 .advantages__attractions-item {
+  padding-left: 40px;
+
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__attractions-item {
+    width: 190px;
+    margin: 60px 33px 60px;
+    padding: 26px 33px 60px;
+
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__attractions-item {
+    width: 300px;
+    margin: 69px 50px 69px;
+  }
 }
 
 .advantages__attractions-item--motel {
   background-image: url("../img/svg/motel.svg");
+}
+
+.advantages__attractions-item--motel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+
+  vertical-align: middle;
 }
 
 .advantages__attractions-item--meal {
