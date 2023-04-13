@@ -16,28 +16,65 @@
   z-index: 5;
 
   display: none;
-  flex-direction: row;
-  height: 223px;
-
-  text-align: center;
 
   background-color: #81b3d2;
-}
 
-@media (min-width: $tablet-width) {
-  .navigation__list {
-    display: flex;
+  @media (min-width: $tablet-width) {
+    position: static;
+
+    display: grid;
     justify-content: space-between;
-    width: 768px;
-    height: 56px;
+    width: 100%;
 
-    background-color: transparent;
+    background-color: #ffffff;
+
+    grid-template-columns: repeat(4, auto);
   }
 }
 
-@media (min-width: $desktop-width) {
-  .navigation__list {
-    width: 100%;
+.navigation__item {
+  padding: 20px 17px 10px;
+
+  text-align: center;
+
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  &:first-child {
+    box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
+
+    @media (min-width: $tablet-width) {
+      box-shadow: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 153px;
+
+    box-shadow: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 239px;
+  }
+
+  &:nth-child(4n-2) {
+    @media (min-width: $tablet-width) {
+      margin-right: 76px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 120px;
+    }
+  }
+
+  &:nth-child(4n-1) {
+    @media (min-width: $tablet-width) {
+      margin-left: 76px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 120px;
+    }
   }
 }
 
@@ -54,27 +91,8 @@
   transform: translateX(-50%);
 }
 
-@media (min-width: $tablet-width) {
-  .navigation__logo {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    z-index: 1;
-
-    display: block;
-    width: 185px;
-    height: 96px;
-    padding-right: 27px;
-    padding-left: 35px;
-
-    transform: translateX(-50%);
-  }
-}
-
 .navigation__link {
   display: inline-block;
-  margin-bottom: 5px;
-  padding-bottom: 26px;
 
   font-weight: 700;
   font-size: 18px;
@@ -82,23 +100,11 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-}
 
-@media (min-width: $tablet-width) {
-  .navigation__link {
-    padding: 18px 48px 17px;
-
-    font-style: normal;
-    font-weight: 700;
+  @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 21px;
     color: #000000;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .navigation__link {
-    padding: 18px 91px 17px;
   }
 }
 

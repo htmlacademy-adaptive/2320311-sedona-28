@@ -1,52 +1,47 @@
 .intro__bg {
-  margin: auto;
-  padding: 90px 19px 85px;
+  position: relative;
 
-  background-image: url("../img/index-background.jpg");
+  padding-top: 90px;
+  padding-bottom: 85px;
+
+  background-color: #8ea8c5;
+  background-image: url("../img/svg/divider.svg"),
+    url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
-}
+  background-position: center bottom, center;
+  background-size: cover;
 
-@media (min-width: $tablet-width) {
-  .intro__bg {
-    padding: 77px 153px 71px;
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+    padding-bottom: 92px;
 
-    color: #ffffff;
-
-    background-color: #94989b;
-    background-image: url("../img/svg/divider.svg"),
-      url("../img/back-tablet.jpg");
-    background-repeat: no-repeat;
-    background-position: center bottom, center;
     background-size: 100% auto, cover;
   }
 }
 
-@media (min-width: $tablet-width) {
-  .intro__bg img {
+.intro__bg img {
+  display: block;
+  width: 282px;
+  height: 214px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
     width: 461px;
-    margin: 0 auto;
+    height: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .intro__bg {
-    padding: 38px 370px 90px;
+.intro--page img {
+  width: 229px;
+  height: 39px;
 
-    color: #ffffff;
-
-    background-color: #94989b;
-    background-image: url("../img/svg/divider.svg"),
-      url("../img/back-desktop.jpg");
-    background-repeat: no-repeat;
-    background-position: center bottom, center;
-    background-size: 100% auto, cover;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .intro__bg img {
-    width: 459px;
-    margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    height: 78px;
   }
 }
 
