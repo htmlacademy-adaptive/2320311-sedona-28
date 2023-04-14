@@ -103,13 +103,11 @@
 }
 
 .form__options-item {
-  @media (min-width: $tablet-width) {
-    display: grid;
-    align-items: center;
+  display: grid;
+  align-items: center;
 
-    gap: 16px;
-    grid-template-columns: auto 1fr;
-  }
+  gap: 16px;
+  grid-template-columns: auto 1fr;
 }
 
 .form__options-label {
