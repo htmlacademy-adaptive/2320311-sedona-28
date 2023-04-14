@@ -80,7 +80,7 @@
 }
 
 .advantages__attractions {
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: grid;
 
     grid-template-columns: repeat(3, 1fr);
