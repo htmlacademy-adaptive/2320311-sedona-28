@@ -1,7 +1,8 @@
 .search {
-  padding: 38px 29px 32px;
+  padding: 38px 18px 32px;
 
   text-align: center;
+  text-transform: uppercase;
 }
 
 .search__title {
@@ -10,4 +11,10 @@
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.search__button {
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }

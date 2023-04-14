@@ -1,9 +1,48 @@
 .intro__bg {
-  margin: auto;
-  padding: 90px 19px 85px;
+  position: relative;
 
-  background-image: url("../img/index-background.jpg");
+  padding-top: 90px;
+  padding-bottom: 85px;
+
+  background-color: #8ea8c5;
+  background-image: url("../img/svg/divider.svg"),
+    url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
+  background-position: center bottom, center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 76px;
+    padding-bottom: 92px;
+
+    background-size: 100% auto, cover;
+  }
+}
+
+.intro__bg img {
+  display: block;
+  width: 282px;
+  height: 214px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+    height: 350px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+  }
+}
+
+.intro--page img {
+  width: 229px;
+  height: 39px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    height: 78px;
+  }
 }
 
 .intro__description {

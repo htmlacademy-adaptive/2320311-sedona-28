@@ -1,7 +1,12 @@
+.map {
+  width: 100%;
+  height: 350px;
+}
+
 .map iframe {
   display: block;
   width: 100%;
-  height: 350px;
+  height: 100%;
 
   border: none;
 }
