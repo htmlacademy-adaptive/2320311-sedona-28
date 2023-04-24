@@ -1,7 +1,16 @@
 .footer {
+  align-items: center;
+  padding: 30px 82px 30px;
+
+  gap: 30px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
   }
 }
 
@@ -14,7 +23,18 @@
 }
 
 .footer__copyright {
+  display: flex;
+  align-items: center;
+  margin-top: 29px;
+  padding: 0;
+
   color: #000000;
+
+  gap: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
+  }
 }
 
 .footer__copyright-text {

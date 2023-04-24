@@ -66,12 +66,11 @@
 }
 
 .product__like {
-  display: grid;
-
-  grid-template-columns: (2, auto);
+  display: inline-block;
 }
 
 .product__like svg {
+  float: left;
   width: 23px;
   height: 21px;
 }
