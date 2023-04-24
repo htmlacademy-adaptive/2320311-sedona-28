@@ -12,6 +12,13 @@
   }
 }
 
+.advantages__item::after {
+  background-image: url("../img/svg/divider2.svg");
+  background-repeat: no-repeat;
+  background-position: center top, center;
+  background-size: cover;
+}
+
 .advantages__item--full {
   @media (min-width: $tablet-width) {
     grid-column: 1/-1;

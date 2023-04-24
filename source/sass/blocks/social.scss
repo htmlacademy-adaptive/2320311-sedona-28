@@ -1,12 +1,9 @@
 .social {
   display: grid;
   margin-top: 30px;
+  margin-bottom: 30px;
 
   grid-template-columns: repeat(3, auto);
-
-  @media (min-width: $tablet-width) {
-    margin: 0 auto;
-  }
 
   @media (min-width: $desktop-width) {
     padding: 36px, 120px, 36px;
