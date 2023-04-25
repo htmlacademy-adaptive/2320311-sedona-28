@@ -1,18 +1,13 @@
 .social {
   display: grid;
-  margin-top: 30px;
+  justify-content: center;
   margin-bottom: 30px;
 
+  gap: 6px;
   grid-template-columns: repeat(3, auto);
 
   @media (min-width: $desktop-width) {
-    padding: 36px, 120px, 36px;
-  }
-}
-
-.social__item {
-  @media (min-width: $tablet-width) {
-    padding: 5px;
+    margin-bottom: 0;
   }
 }
 

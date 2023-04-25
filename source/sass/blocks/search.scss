@@ -10,7 +10,14 @@
   font-size: 21px;
   line-height: 26px;
   color: #000000;
-  text-transform: uppercase;
+}
+
+.search__text br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .search__button {
