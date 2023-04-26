@@ -8,14 +8,13 @@
 .visually-hidden {
   position: absolute;
 
-  width: 1px;
-  height: 1px;
+  width: 22px;
+  height: 4px;
   margin: -1px;
   padding: 0;
   overflow: hidden;
 
-  white-space: nowrap;
-
+  background-color: #000000;
   border: 0;
 
   clip: rect(0 0 0 0);

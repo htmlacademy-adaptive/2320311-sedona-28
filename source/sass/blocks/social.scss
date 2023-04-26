@@ -1,4 +1,23 @@
+.social {
+  display: grid;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  gap: 6px;
+  grid-template-columns: repeat(3, auto);
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
 .social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+
   color: #ffffff;
 
   background-color: #81b3d2;

@@ -1,10 +1,27 @@
+.form {
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding: 70px 60px 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 120px 40px;
+  }
+}
+
 .form__wrapper-fieldset {
   @media (min-width: $tablet-width) {
     position: relative;
 
     display: grid;
 
+    gap: 58px;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 100px;
   }
 
   &::before {
@@ -20,18 +37,60 @@
       background-color: #dbdbdb;
       transform: translateX(-50%);
     }
-
-    @media (min-width: $desktop-width) {
-      left: 51.4%;
-    }
   }
 }
 
+.form__fieldset {
+  position: relative;
+
+  margin: 0;
+  padding: 24px 20px 39px;
+
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+
+  @media (min-width: $tablet-width) {
+    padding: 24px 0 20px;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 25px 0;
+
+    border: none;
+  }
+}
+
+.form__fieldset-title {
+  margin: 0 0 20px;
+
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.form__contact-list {
+  display: grid;
+
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
 .form__contact-label {
+  padding-left: 16px;
+
   text-transform: uppercase;
 }
 
 .form__contact-input {
+  display: flex;
   width: 100%;
   height: 58px;
   padding: 6px 12px 6px 12px;
@@ -44,26 +103,28 @@
 
   background-color: #f2f2f2;
   border: 4px solid transparent;
-}
 
-.form__fieldset-title {
-  margin: 0 0 20px;
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
 
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
+    opacity: 1;
+  }
 }
 
 .form__contact-input--phone {
+  padding-right: 60px;
+
   background-image: url("../img/svg/phone.svg");
   background-repeat: no-repeat;
+  background-position: center right -4px;
 }
 
 .form__contact-input--mail {
+  padding-right: 60px;
+
   background-image: url("../img/svg/mail.svg");
   background-repeat: no-repeat;
+  background-position: center right -4px;
 }
 
 .form__options {
@@ -138,7 +199,7 @@
   content: "";
   position: absolute;
   top: 50%;
-  left: 35%;
+  left: 14px;
 
   width: 16px;
   height: 16px;
@@ -148,10 +209,75 @@
   transform: translateY(-50%);
 }
 
-.form__options-input[type="checkbox"]:checked {
-  background-image: url("../img/svg/checkbox.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.form__options-input[type="checkbox"] {
+  &:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 22px;
+    height: 16px;
+
+    background-image: url("../img/svg/checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.form__feedback {
+  width: 100%;
+  height: 150px;
+  padding: 15px 12px 12px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: 4px solid transparent;
+
+  resize: none;
+
+  @media (min-width: $tablet-width) {
+    height: 160px;
+    padding-top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    max-width: 770px;
+    height: 160px;
+    margin: 0 auto;
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.form__fieldset--submit {
+  padding-top: 11px;
+  padding-bottom: 10px;
+
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 20px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 96px 31px;
+  }
 }
 
 .form__submit {
@@ -180,5 +306,49 @@
   @media (min-width: $tablet-width) {
     font-size: 14px;
     color: #333333;
+  }
+}
+
+.form__fieldset-title--lines {
+  @media (min-width: $tablet-width) {
+    overflow: hidden;
+  }
+}
+
+.form__fieldset-title--lines span {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    max-width: 400px;
+    padding: 0 60px;
+
+    vertical-align: middle;
+  }
+}
+
+.form__fieldset-title--lines::before,
+.form__fieldset-title--lines::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: relative;
+
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+
+    vertical-align: middle;
+
+    background-color: #dbdbdb;
+  }
+}
+
+.form__fieldset-title--lines::before {
+  @media (min-width: $tablet-width) {
+    margin-left: -100%;
+  }
+}
+
+.form__fieldset-title--lines::after {
+  @media (min-width: $tablet-width) {
+    margin-right: -100%;
   }
 }
