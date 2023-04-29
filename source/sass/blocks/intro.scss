@@ -16,6 +16,16 @@
     padding-bottom: 92px;
 
     background-size: 100% auto, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 

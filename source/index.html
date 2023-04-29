@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="img/png" sizes="32x32" href="img/favicon.png">
 </head>
 
-<body class="body">
+<body class="body no-jc">
   <header class="header">
     <!-- navigation--open открывает меню -->
     <nav class="header__navigation navigation">
@@ -41,7 +43,7 @@
         <img src="img/svg/text-index.svg" width="282" height="214" alt="Welcome to the georgeous Sedona.">
       </div>
       <div class="intro__description">
-        <p class="intro__title">Седона <br> небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="intro__title">Седона &mdash; небольшой городок в Аризоне, <br> заслуживающий большего!</p>
         <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
     </section>
@@ -56,7 +58,11 @@
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="advantages__img">
-              <img src="img/photo-city-mobile.jpg" width="320" height="260" alt="Праздничный городок.">
+              <picture>
+                <source media="(min-width: $desktop-width)" srcset="img/photo-city-desktop.jpg">
+                <source media="(min-width: $tablet-width)" srcset="img/photo-city-tablet.jpg">
+                <img src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile.jpg 1x, img/photo-city@2x.jpg 2x" alt="Праздничный городок.">
+              </picture>
             </div>
           </div>
           <ul class="advantages__attractions list-reset">
@@ -82,7 +88,11 @@
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="advantages__img">
-              <img src="img/photo-bridge-mobile.jpg" width="320" height="260" alt="Мост Дьявола.">
+              <picture>
+                <source media="(min-width: $desktop-width)" srcset="img/photo-bridge-desktop.jpg">
+                <source media="(min-width: $tablet-width)" srcset="img/photo-bridge-tablet.jpg">
+                <img src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile.jpg 1x, img/photo-bridge@2x.jpg 2x" alt="Мост Дьявола.">
+              </picture>
             </div>
           </div>
         </li>
@@ -121,7 +131,7 @@
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701621.4470020552!2d-112.23016531565146!3d34.8319356793181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1658414241197!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <noscript>
         <a class="map__img" href="#">
-          <img src="img/map.jpg" width="320" height="350" alt="Карта.">
+          <img src="img/map-group.jpg" width="320" height="350" alt="Карта.">
         </a>
       </noscript>
     </section>

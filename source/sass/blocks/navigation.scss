@@ -23,17 +23,12 @@
   }
 }
 
-.navigation--open .navigation__btn {
-  background-image: url("../img/svg/icon-cross.svg");
+.navigation__btn:hover {
+  opacity: 0.3;
 }
 
-.navigation__btn:hover {
-  width: 32px;
-  height: 32px;
-
-  background-color: #81b3d2;
+.navigation--open .navigation__btn {
   background-image: url("../img/svg/icon-cross.svg");
-  background-repeat: no-repeat;
 }
 
 .navigation__list {
