@@ -702,12 +702,17 @@ img {
 
 .footer__appeal {
   display: inline-block;
-  margin-bottom: 0;
+  margin-bottom: 33px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   text-decoration: none;
+}
+@media (min-width: 768px) {
+  .footer__appeal {
+    margin-bottom: 0;
+  }
 }
 
 .footer__copyright {
@@ -1323,9 +1328,14 @@ img {
 .social {
   display: grid;
   justify-content: center;
-  margin-bottom: 0;
+  margin-bottom: 33px;
   gap: 6px;
   grid-template-columns: repeat(3, auto);
+}
+@media (min-width: 768px) {
+  .social {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 1200px) {
   .social {
