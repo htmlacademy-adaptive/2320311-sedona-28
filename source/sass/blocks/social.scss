@@ -1,10 +1,14 @@
 .social {
   display: grid;
   justify-content: center;
-  margin-bottom: 0;
+  margin-bottom: 33px;
 
   gap: 6px;
   grid-template-columns: repeat(3, auto);
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
