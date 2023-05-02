@@ -259,7 +259,7 @@ img {
   .intro__bg {
     padding-top: 76px;
     padding-bottom: 92px;
-    background-image: url("../img/svg/divider.svg"), url("../img/back-tablet@2x.jpg");
+    background-image: url("../img/svg/divider.svg"), url("../img/back-tablet.jpg");
     background-size: 100% auto, cover;
   }
 }
@@ -270,12 +270,12 @@ img {
 }
 @media (min-width: 1200px) {
   .intro__bg {
-    background-image: url("../img/svg/divider.svg"), url("../img/back-desktop@2x.jpg");
+    background-image: url("../img/svg/divider.svg"), url("../img/back-desktop.jpg");
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .intro__bg {
-    background-image: url("../img/back-desktop@2x.jpg");
+    background-image: url("../img/svg/divider.svg"), url("../img/back-desktop@2x.jpg");
   }
 }
 
@@ -1344,11 +1344,6 @@ img {
   grid-template-columns: repeat(3, auto);
 }
 @media (min-width: 768px) {
-  .social {
-    margin-bottom: 0;
-  }
-}
-@media (min-width: 1200px) {
   .social {
     margin-bottom: 0;
   }
