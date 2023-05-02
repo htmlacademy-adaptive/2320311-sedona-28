@@ -21,7 +21,7 @@
     padding-bottom: 92px;
 
     background-image: url("../img/svg/divider.svg"),
-      url("../img/back-tablet@2x.jpg");
+      url("../img/back-tablet.jpg");
     background-size: 100% auto, cover;
 
     @media (min-resolution: 2dppx) {
@@ -32,10 +32,11 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/svg/divider.svg"),
-      url("../img/back-desktop@2x.jpg");
+      url("../img/back-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/back-desktop@2x.jpg");
+      background-image: url("../img/svg/divider.svg"),
+        url("../img/back-desktop@2x.jpg");
     }
   }
 }
