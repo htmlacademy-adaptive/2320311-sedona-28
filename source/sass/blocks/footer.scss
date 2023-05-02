@@ -19,13 +19,17 @@
 
 .footer__appeal {
   display: inline-block;
-  margin-bottom: 31px;
+  margin-bottom: 33px;
 
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .footer__copyright {

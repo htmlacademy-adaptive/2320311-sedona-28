@@ -5,17 +5,38 @@
   padding-bottom: 85px;
 
   background-color: #8ea8c5;
-  background-image: url("../img/svg/divider.svg"),
-    url("../img/back-desktop.jpg");
+  background-image: url("../img/svg/divider.svg"), url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center bottom, center;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/svg/divider.svg"),
+      url("../img/back-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 76px;
     padding-bottom: 92px;
 
+    background-image: url("../img/svg/divider.svg"),
+      url("../img/back-tablet.jpg");
     background-size: 100% auto, cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/svg/divider.svg"),
+        url("../img/back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/svg/divider.svg"),
+      url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/svg/divider.svg"),
+        url("../img/back-desktop@2x.jpg");
+    }
   }
 }
 

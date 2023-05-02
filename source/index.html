@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="img/png" sizes="32x32" href="img/favicon.png">
 </head>
 
-<body class="body">
+<body class="body no-js">
   <header class="header">
     <!-- navigation--open открывает меню -->
     <nav class="header__navigation navigation">
@@ -41,7 +43,7 @@
         <img src="img/svg/text-index.svg" width="282" height="214" alt="Welcome to the georgeous Sedona.">
       </div>
       <div class="intro__description">
-        <p class="intro__title">Седона <br> небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="intro__title">Седона &mdash; небольшой городок в Аризоне, <br> заслуживающий большего!</p>
         <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
     </section>
@@ -56,7 +58,11 @@
               <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="advantages__img">
-              <img src="img/photo-city-mobile.jpg" width="320" height="260" alt="Праздничный городок.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+                <img src="img/photo-city-mobile.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="Праздничный городок.">
+              </picture>
             </div>
           </div>
           <ul class="advantages__attractions list-reset">
@@ -82,7 +88,11 @@
               <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="advantages__img">
-              <img src="img/photo-bridge-mobile.jpg" width="320" height="260" alt="Мост Дьявола.">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
+              </picture>
             </div>
           </div>
         </li>

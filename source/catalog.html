@@ -6,9 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="img/png" sizes="32x32" href="img/favicon.png">
 </head>
 
-<body class="body">
+<body class="body no-js">
   <header class="header">
     <!-- navigation--open открывает меню -->
     <nav class="header__navigation navigation">
@@ -41,8 +43,7 @@
       </div>
       <div class="intro__description">
         <h1 class="intro__title">Фото и видео</h1>
-        <p class="intro__text">Не можете решиться на путешествие из-за курса?
-          <br>Фотографии помогут вам забыть о политике и экономике.
+        <p class="intro__text">Не можете решиться на путешествие из-за курса? <br>Фотографии помогут вам забыть о политике и экономике.
         </p>
       </div>
     </section>
@@ -51,7 +52,11 @@
       <ol class="product__list list-reset">
         <li class="product__item">
           <a class="product__img" href="#">
-            <img src="img/photo-1-mobile.jpg" width="280" height="280" alt="Неродные просторы.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы.">
+            </picture>
           </a>
           <div class="product__container">
             <div class="product__description">
@@ -69,7 +74,11 @@
         </li>
         <li class="product__item">
           <a class="product__img" href="#">
-            <img src="img/photo-2-mobile.jpg" width="280" height="280" alt="Местная растительность.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность.">
+            </picture>
           </a>
           <div class="product__container">
             <div class="product__description">
@@ -86,7 +95,11 @@
         </li>
         <li class="product__item">
           <a class="product__img" href="#">
-            <img src="img/photo-3-mobile.jpg" width="280" height="280" alt="Дорога на север.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север.">
+            </picture>
           </a>
           <div class="product__container">
             <div class="product__description">
@@ -103,7 +116,11 @@
         </li>
         <li class="product__item">
           <a class="product__img" href="#">
-            <img src="img/photo-4-mobile.jpg" width="280" height="280" alt="Мост Дьявола.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост Дьявола.">
+            </picture>
           </a>
           <div class="product__container">
             <div class="product__description">
@@ -124,7 +141,11 @@
       <h2 class="video__title">Все еще сомневаетесь?</h2>
       <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они <br> не подорожали в очередной раз!</p>
       <div class="video__image">
-        <img src="img/video-mobile.jpg" width="280" height="177" alt="Видеопрезентация.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видеопрезентация.">
+        </picture>
         <button class="video__play" type="button">
           <span class="visually-hidden">Play</span>
         </button>
