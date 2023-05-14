@@ -22,7 +22,35 @@ export const styles = () => {
 export const html = () => {
   return gulp.src("soruce/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("source"));
+    .pipe(gulp.dest("build"));
+}
+
+// Scripts
+const script = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(terser())
+    .pipe(gulp.dest("build/js"))
+}
+
+// Images
+export const optimizeImages = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(squoosh())
+    .pipe(gulp.dest("build/img"))
+}
+
+const copyImages = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(gulp.dest("build/img"))
+}
+
+// WebP
+export const createWebp = () => {
+  return gulp.src("source/img/**/*.{jpg,png}")
+    .pipe(squoosh(encodeOptions{
+      webp: {}
+    }))
+    .pipe(gulp.dest("build/img"))
 }
 
 // Server
@@ -30,7 +58,7 @@ export const html = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -48,5 +76,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  html, styles, server, watcher
 );
