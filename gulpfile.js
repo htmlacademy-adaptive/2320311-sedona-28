@@ -18,6 +18,13 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
+// HTML
+export const html = () => {
+  return gulp.src("soruce/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("source"));
+}
+
 // Server
 
 const server = (done) => {
