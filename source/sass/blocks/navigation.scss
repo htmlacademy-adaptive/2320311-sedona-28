@@ -75,6 +75,10 @@
   }
 }
 
+#menu-toggle:checked ~ ul {
+  display: block;
+}
+
 .navigation__item {
   padding: 20px 17px 10px;
 
