@@ -67,12 +67,12 @@ const createWebp = () => {
 
 // SVG
 
-const svg = () =>
+export const svg = () =>
   gulp.src(['source/img/**/*.svg', '!source/img/sprite/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 
-const sprite = () => {
+export const sprite = () => {
   return gulp.src('source/img/sprite/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
@@ -164,33 +164,3 @@ export default gulp.series(
     server,
     watcher
   ));
-
-
-// Button {
-const button = document.querySelector('.button');
-
-button.addEventListener('mouseover', () => {
-  button.classList.add('hover');
-});
-
-button.addEventListener('mouseout', () => {
-  button.classList.remove('hover');
-});
-
-button.addEventListener('mousedown', () => {
-  button.classList.add('active');
-});
-
-button.addEventListener('mouseup', () => {
-  button.classList.remove('active');
-});
-
-button.addEventListener('focus', () => {
-  button.classList.add('focus');
-});
-
-button.addEventListener('blur', () => {
-  button.classList.remove('focus');
-});
-  }
-
