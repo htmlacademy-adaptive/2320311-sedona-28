@@ -17,9 +17,13 @@
   }
 }
 
+.footer--page {
+  padding-top: 33px;
+}
+
 .footer__appeal {
   display: inline-block;
-  margin-bottom: 33px;
+  margin-bottom: 29px;
 
   font-weight: 700;
   font-size: 21px;
@@ -29,6 +33,17 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: #81b3d2;
+
+    outline: none;
+  }
+
+  &:active {
+    color: #b3b3b3;
   }
 }
 
@@ -41,6 +56,17 @@
   text-decoration: none;
 
   gap: 12px;
+
+  &:hover,
+  &:focus {
+    color: #81b3d2;
+
+    outline: none;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
 .footer__copyright svg {

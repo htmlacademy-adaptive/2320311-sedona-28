@@ -1,0 +1,128 @@
+.options {
+  display: grid;
+
+  gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.options--radio {
+  @media (min-width: $tablet-width) {
+    padding: 0 36px;
+
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 19px 54px 16px;
+
+    gap: 16px 62px;
+    grid-template-columns: repeat(3, auto);
+  }
+}
+
+.options--check {
+  @media (min-width: $tablet-width) {
+    padding: 0 83px;
+
+    gap: 16px 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 32px 45px;
+
+    gap: 16px 62px;
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+.options__item {
+  display: grid;
+  align-items: center;
+
+  gap: 16px;
+  grid-template-columns: auto 1fr;
+}
+
+.options__input {
+  position: relative;
+
+  width: 46px;
+  height: 46px;
+  margin: 0;
+
+  background-color: #f2f2f2;
+  border-radius: 4px;
+
+  appearance: none;
+}
+
+.options__input[type="radio"] {
+  border-radius: 50%;
+
+  &:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 14px;
+
+    width: 16px;
+    height: 16px;
+
+    background-color: #333333;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.options__input[type="checkbox"] {
+  &:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 22px;
+    height: 16px;
+
+    background-image: url("../img/svg/checkbox.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.options__input:hover,
+.options__input:focus {
+  background-color: #e5e5e5;
+  outline: none;
+}
+
+.options__input:active {
+  background-color: #d5d5d5;
+}
+
+.options__input:active::after {
+  opacity: 0.3;
+}
+
+.options__item:active .options__input::after {
+  opacity: 0.3;
+}
+
+.options__input:disabled,
+.options__input--disabled,
+.options__input:disabled + .options__label,
+.options__input--disabled + .options__label {
+  opacity: 0.3;
+
+  pointer-events: none;
+}
+
+.options__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}

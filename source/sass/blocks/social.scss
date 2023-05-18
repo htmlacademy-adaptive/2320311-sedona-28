@@ -21,4 +21,20 @@
   color: #ffffff;
 
   background-color: #81b3d2;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #5496bd;
+  }
+}
+
+.social__link svg {
+  fill: currentColor;
 }
